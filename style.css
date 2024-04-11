@@ -1,0 +1,492 @@
+*{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*------------------------------------ NAVBAR------------------------------------------ */
+
+header {
+    display: flex;
+    padding: 20px 60px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5em;
+}
+
+.nav-links {
+    list-style-type: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-right: 55px;
+}
+
+.nav-links li:last-child {
+    margin-right: 0;
+}
+
+.nav-links a {
+    color:#212832;
+    text-decoration: none;
+}
+
+.signup-button {
+    color: #212832;
+    padding: 8px 16px;
+    border: 1px solid black;
+    background-color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropbtn {
+    background-color: white;
+    color: #212832;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    min-width: 100px;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: #fff;
+    padding: 8px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* --------------------------------------------HERO SECTION-------------------------------------------------- */
+
+main{
+    padding: 10px 60px;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    
+}
+
+.hero-content{
+    width: 50%;
+    
+}
+
+.hero-content .stroke{
+    position: relative;
+}
+
+.hero-content .stroke::after{
+    content: "";
+    position: absolute;
+    width: 170%;
+    height: 10px;
+    bottom: 0;
+    left: 0;
+    background-image: url(./Assets/Rectangle\ 36.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.hero-content h3{
+    color: #DF6951;
+    margin-top: 80px;
+}
+
+.hero-content h1{
+    font-size: 4rem;
+    margin-top: 25px;
+    margin-left: 10px;
+}
+
+.hero-content p{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 30px;
+    font-style: normal;
+    text-align: left;
+    color: #5e6282;
+    padding: 15px;
+}
+
+.find-out-more{
+    border-radius: 5px;
+    border: none;
+    padding: 15px 20px;
+    background-color: #F1A501;
+    color: white;
+    margin-top: 10px;
+    cursor: pointer;
+    
+}
+
+.play-demo{
+    border: none;
+    border-radius: 50%;
+    background-color: #DF6951;
+    padding: 15px;
+    margin-left: 25px;
+    cursor: pointer;
+}
+
+.hero-image{
+    background-image: url(./Assets/Image.png);
+    background-position: center;
+    background-size: cover;
+    width: 50%;
+    
+}
+
+/* ---------------------------------------CATEGORIES----------------------------------- */
+
+.category{
+    margin: 10px 0;
+    height: 80vh;
+    width: 100%;
+    margin-top: 70px;
+    padding-top: 40px;
+   
+}
+
+
+.category h3{
+    text-align: center;
+    color: #5e6282;
+}
+
+.category h4{
+    text-align: center;
+    font-size: 3rem;
+    margin-top: 10px;
+}
+
+.cards-container{
+    margin-top: 50px;
+    padding: 10px 60px ;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.card{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card h5{
+    text-align: center;
+    color: #1E1D4C;
+    margin: 8px 0;
+    font-size: 1rem;
+}
+
+.card p{
+    color: #5E6282;
+    text-align: center;
+    
+}
+
+/* -------------------------------------------------TOP SELLING---------------------------------- */
+
+.destinations{
+    width: 100%;
+    padding: 20px 70px;
+    
+}
+
+.destinations h3{
+    text-align: center;
+    color: #5e6282;
+}
+
+.destinations h4{
+    text-align: center;
+    font-size: 3rem;
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+.destination-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 40px;
+}
+
+.destination-container p {
+    margin-bottom: 10px;
+    padding-left: 10px
+}
+
+.destination{
+    box-shadow: rgba(05, 05, 0, 0.55) ;
+   
+}
+
+
+/*---------------------------------------BOOK YOUR NEXT TRIP----------------------------------------------- */
+
+.booking{
+    width: 100%;
+    height: 80vh;
+    padding: 20px 70px;
+}
+
+.booking-container{
+    display: flex;
+}
+.primary {
+    color: #5e6282;
+    font-weight: 600;
+}
+
+.left h3{
+    font-size: 3rem;
+    margin: 10px 0;
+}
+
+.steps{
+    display: flex;
+    align-items: center;
+    margin: 40px 0;
+}
+
+.steps h6{
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.image{
+    margin-right: 15px;
+}
+
+.text p{
+    color: #5e6282;
+}
+
+.right{
+    margin-left: 450px;
+    height: 80vh;
+    position: relative;
+}
+
+.right-card{
+    background-color: #fff;
+    border-radius: 25px;
+    box-shadow: #00000000 0px 5px 15px;
+    padding: 20px 40px;
+    height: 80%;
+    
+}
+
+.card-text h5{
+    font-size: 1.3rem;
+    font-weight: lighter;
+    margin: 6px 0;
+}
+
+.right-card p{
+    color: #5e6282;
+}
+
+.symbols{
+    margin: 15px 0;
+}
+
+.overlay{
+    display: flex;
+    margin-top: 280px;
+    margin-right: 50px;
+    background-color: #fff;
+    position: absolute;
+    right: 0;
+}
+
+.ellipse{
+    height: 80px;
+    width: 80px;
+}
+
+/*-------------------------------------------------------TESTIMONIALS---------------------------------------------------- */
+
+.testimonials{
+    width: 100%;
+    height: 70vh;
+    padding: 0px 70px;
+    margin-top: 30px;
+    display: flex;
+    
+}
+
+.testimonial-primary h4{
+    color: #5e6282;
+    margin-bottom: 15px;
+}
+
+.testimonial-primary h3{
+    font-size: 3rem;
+    padding-bottom: 90px;
+}
+
+.testimonial{
+    margin-left: 450px;
+}
+
+.review{
+    color: #5e6282;
+    line-height: 26px;
+    margin-left: 60px;
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+.mike{
+    color: #5e6282;
+    line-height: 26px;
+    margin-left: 60px;
+    text-align: left;
+    margin-bottom: 30px;
+    
+}
+
+.chris{
+    color: #5e6282;
+    line-height: 26px;
+    margin-left: 100px;
+}
+
+/*--------------------------------------------------PARTNERS---------------------------------------------------------------------------- */
+
+.partners{
+    width: 100%;
+    height: 20vh;
+    padding: 0 70px;
+    margin-bottom: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/*-----------------------------------------------------SUBSCRIBE--------------------------------------------------------------------------  */
+
+.subscribe{
+    width: 100%;
+    height: 40vh;
+    padding: 0 70px;
+    margin-bottom: 20px;
+}
+
+.subs{
+    width: 100%;
+    height: 100%;
+    background-color: #b0b4ce50;
+    border-radius: 80px 0 0 0 ;
+}
+
+.subs h4{
+    font-size: 2rem;
+    text-align: center;
+    line-height: 50px;
+    color: #5e6282;
+    
+}
+.subs img{
+    position: absolute;
+    right: 3%;
+}
+
+.input{
+   padding-top: 100px;
+   padding-left: 510px;
+   
+}
+
+input{
+    background-image: url(./Assets/Group\ 46.png) ;
+    background-position: 4px ;
+    background-repeat: no-repeat;
+    padding: 20px 50px;
+    border: none;
+    border-radius: 7px;
+}
+
+.input button{
+    padding: 20px 25px;
+    border: none;
+    border-radius: 7px;
+    background-color: #FF7D68;
+    color: #f4c7b7;
+    font-weight: 600;
+}
+
+/*----------------------------------------------------------FOOTER--------------------------------------------------------------------  */
+
+.footer{
+    width: 100%;
+    padding: 40px 70px;
+    margin:50px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.footer a{
+    text-decoration: none;
+    color: #5e6282 ;
+}
+
+.footer ul{
+    list-style-type: none;
+}
+
+.footer ul li {
+    margin: 8px 0;
+}
+
+.jadoo h3{
+    font-size: 2.5rem;
+}
+
+.jadoo p{
+    color:#5e6282 ;
+    margin-top: 5px;
+}
+
+.download{
+    margin: 12px 0;
+}
+
+.discover p{
+    color: #5E6282;
+}
